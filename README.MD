@@ -3,9 +3,13 @@ Pada sprint ini aplikasi berpindah dari console ke GUI. Ditambahkan class MainWi
 
 ## Screenshot MainWindow
 Sebelum data diubah (Gandalf level 7, rata-rata level 4.20):
+
 ![alt text](tp8-sebelum.png)
+
 Sesudah data diubah (Gandalf level 10, rata-rata level 4.80):
+
 ![alt text](tp8-sesudah.png)
+
 Kedua screenshot memuat 5 karakter dan membuktikan bahwa statistik ikut berubah saat data diubah.
 
 ## Aliran data: Main → CharacterManager → MainWindow
