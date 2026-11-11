@@ -15,6 +15,10 @@ public final class AppTheme {
     public static final Color TEXT_MAIN  = Color.decode("#dfe6e9");
     public static final Color TEXT_LIGHT = Color.WHITE;
     public static final Color GOLD       = Color.decode("#fdcb6e");
+    
+    // Konstanta baru untuk Sprint #5
+    public static final Color BG_STATUS  = Color.decode("#0d0d1a"); // latar bar status: lebih gelap
+    public static final Color TEXT_MUTED = Color.decode("#9d9dbf"); // teks sekunder / metadata
 
     // ---------- Font ----------
     public static final Font FONT_TITLE = new Font("SansSerif", Font.BOLD, 22);
