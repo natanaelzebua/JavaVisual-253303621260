@@ -7,6 +7,8 @@ Proyek ini adalah fondasi model class untuk aplikasi Character Manager berbasis 
 ## Struktur Folder
 ```
 CharacterManager/
+├── assets/
+│   └── output.png
 ├── src/
 │   ├── com/
 │   │   └── unpri/
@@ -15,7 +17,6 @@ CharacterManager/
 │   │               ├── Character.java
 │   │               └── CharacterType.java
 │   └── Main.java
-├── output.png
 └── README.md
 ```
 
