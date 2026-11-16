@@ -2,7 +2,7 @@
 Proyek ini adalah fondasi model class untuk aplikasi Character Manager berbasis Java 17. Berisi enum CharacterType dan class Character dengan dua constructor, validasi pada setter, serta fitur tambahan mana dan isAlive(). Class ini akan menjadi dasar GUI pada sprint berikutnya.
 
 ## Output Terminal
-![alt text](output.png)
+![alt text](Output.png)
 
 ## Struktur Folder
 ```
@@ -15,7 +15,7 @@ CharacterManager/
 │   │               ├── Character.java
 │   │               └── CharacterType.java
 │   └── Main.java
-├── output.png
+├── Output.png
 └── README.md
 ```
 
