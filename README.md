@@ -15,7 +15,7 @@ CharacterManager/
 │   │               ├── Character.java
 │   │               └── CharacterType.java
 │   └── Main.java
-├── Output.png
+├── output.png
 └── README.md
 ```
 
