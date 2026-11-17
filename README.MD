@@ -2,7 +2,7 @@
 Pada sprint ini MainWindow naik dari v0.4 ke v0.5 dengan tata letak BorderLayout yang tetap rapi saat jendela diubah ukurannya. Empat wilayah terisi: header dan panel statistik (NORTH), daftar karakter berscroll (CENTER), legenda role (EAST), dan bar status (SOUTH). Package model tidak berubah sama sekali.
 
 ## Wireframe
-![alt text](tp12-wireframe.jpg)
+![alt text](tp12-wireframe.png)
 
 ## Screenshot
 ![alt text](tp12-awal.png)
@@ -62,17 +62,17 @@ Output perintah di atas kosong, artinya tidak ada perubahan di Character.java, C
 ```text
 CharacterManager/
 ├── src/
-│   ├── com/
-│   │   └── unpri/
-│   │       └── charactermanager/
-│   │           ├── model/
-│   │           │   ├── Character.java
-│   │           │   ├── CharacterManager.java
-│   │           │   └── CharacterType.java
-│   │           └── view/
-│   │               ├── AppTheme.java
-│   │               └── MainWindow.java
-│   └── Main.java
+│   └── com/
+│       └── unpri/
+│           └── charactermanager/
+│               ├── model/
+│               │   ├── Character.java
+│               │   ├── CharacterManager.java
+│               │   └── CharacterType.java
+│               ├── view/
+│               │   ├── AppTheme.java
+│               │   └── MainWindow.java
+│               └── Main.java
 ├── output-tp5.png
 ├── output.png
 ├── README.MD
@@ -83,8 +83,12 @@ CharacterManager/
 ├── tp12-awal.png
 ├── tp12-kecil.png
 ├── tp12-lebar.png
-└── tp12-wireframe.jpg
+└── tp12-wireframe.png
 ```
 
 ## Analisis Bagian D TP12 (Google Docs)
+Nama : Natanael Lata Saro Agassi Zebua  
+
+Nim : 253303621260  
+
 https://docs.google.com/document/d/1Ed-qlIjabQL-b8R40SpF7mxtopQEQBDn/edit?usp=drive_link&ouid=114985403171917953493&rtpof=true&sd=true

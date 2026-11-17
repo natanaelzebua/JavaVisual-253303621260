@@ -1,4 +1,4 @@
-package com.unpri.charactermanager;
+                                                                                                                            package com.unpri.charactermanager;
 
 import javax.swing.SwingUtilities;
 import com.unpri.charactermanager.model.Character;
