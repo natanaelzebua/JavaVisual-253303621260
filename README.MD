@@ -43,7 +43,8 @@ CharacterManager/
 ```
 
 ## Analisis Bagian D TP8 (Google Docs)
-Nama : Natanael Lata Saro Agassi Zebua
+Nama : Natanael Lata Saro Agassi Zebua  
+
 Nim : 253303621260  
 
 https://docs.google.com/document/d/1P2E1Vt90Tm4gVKWp6zVS8HTPDeWaj57T_hBUxTMtxhY/edit?usp=drive_link
