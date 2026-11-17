@@ -1,25 +1,25 @@
 package com.unpri.charactermanager.view;
 
+import javax.swing.BorderFactory;
+import javax.swing.BoxLayout;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 import javax.swing.JLabel;
-import java.awt.BorderLayout;
+import javax.swing.JPanel;
 import java.util.ArrayList;
 import com.unpri.charactermanager.model.Character;
 
 /**
- * Jendela utama aplikasi Character Manager - Sprint #3.
+ * Jendela utama aplikasi Character Manager.
+ * Menampilkan daftar karakter yang diterima dari luar (bukan dibuat sendiri).
  */
 public class MainWindow extends JFrame {
 
     private JPanel mainPanel;
-    private ArrayList<Character> characterList;
-    private double averageLevel;
+    private ArrayList<Character> characterList;   // data yang akan ditampilkan
 
-    public MainWindow(ArrayList<Character> characterList, double averageLevel) {
-        super("Character Manager v0.3");
-        this.characterList = characterList;
-        this.averageLevel = averageLevel;
+    public MainWindow(ArrayList<Character> characterList) {
+        super("Character Manager v0.3");           // judul title bar
+        this.characterList = characterList;        // simpan data yang diterima dari Main.java
 
         initComponents();
 
@@ -30,31 +30,35 @@ public class MainWindow extends JFrame {
 
     private void initComponents() {
         mainPanel = new JPanel();
-        mainPanel.setLayout(new BorderLayout());
+        mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
+        mainPanel.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
 
-        StringBuilder sb = new StringBuilder();
-        // Ukuran font sedikit lebih besar dan rata kiri, tanpa padding berlebih
-        sb.append("<html><div style='font-family: Arial; font-size: 13pt; text-align: left; padding: 20px;'>");
-        
-        // Judul (posisi normal seperti semula)
-        sb.append("=== Daftar Karakter ===<br><br>");
+        mainPanel.add(new JLabel("=== Daftar Karakter ==="));
 
-        // Looping setiap karakter dengan tambahan jarak (<br><br>) di setiap akhir baris karakter
+        // DINAMIS: satu JLabel dibuat untuk setiap karakter lewat loop
         for (Character c : characterList) {
-            sb.append(c.getName()).append(" (")
-              .append(c.getType()).append(") - Level ")
-              .append(c.getLevel()).append(" | HP: ")
-              .append(c.getHitPoints()).append(" | ATK: ")
-              .append(c.getAttackPower()).append("<br><br>"); // Diberi jarak antar data karakter
+            JLabel label = new JLabel(c.getName() + " (" + c.getType() + ") - Level " + c.getLevel()
+                    + " | HP: " + c.getHitPoints() + " | ATK: " + c.getAttackPower());
+            label.setBorder(BorderFactory.createEmptyBorder(4, 0, 4, 0));
+            mainPanel.add(label);
         }
 
-        // Statistik rata-rata level di bagian bawah (posisi normal seperti semula)
-        sb.append("Rata-rata Level: ").append(String.format("%.2f", averageLevel));
-        sb.append("</div></html>");
-
-        JLabel contentLabel = new JLabel(sb.toString());
-        mainPanel.add(contentLabel, BorderLayout.NORTH);
+        // MINI-CHALLENGE: statistik rata-rata level di bawah daftar
+        JLabel averageLabel = new JLabel("Rata-rata Level: " + String.format("%.2f", calculateAverageLevel()));
+        averageLabel.setBorder(BorderFactory.createEmptyBorder(20, 0, 0, 0));
+        mainPanel.add(averageLabel);
 
         add(mainPanel);
+    }
+
+    private double calculateAverageLevel() {
+        if (characterList.isEmpty()) {
+            return 0;   // hindari pembagian dengan nol
+        }
+        int sum = 0;
+        for (Character c : characterList) {
+            sum += c.getLevel();
+        }
+        return (double) sum / characterList.size();
     }
 }

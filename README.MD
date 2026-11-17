@@ -24,27 +24,26 @@ Main.java membuat CharacterManager dan mengisinya dengan lima karakter (Model). 
 ## Struktur folder
 ```text
 CharacterManager/
-│
 ├── src/
-│   └── com/
-│       └── unpri/
-│           └── charactermanager/
-│               ├── model/
-│               │   ├── Character.java
-│               │   ├── CharacterManager.java
-│               │   └── CharacterType.java
-│               │
-│               ├── view/
-│               │   └── MainWindow.java
-│               │
-│               └── Main.java
-│
+│   ├── com/
+│   │   └── unpri/
+│   │       └── charactermanager/
+│   │           ├── model/
+│   │           │   ├── Character.java
+│   │           │   ├── CharacterManager.java
+│   │           │   └── CharacterType.java
+│   │           └── view/
+│   │               └── MainWindow.java
+│   └── Main.java
 ├── output-tp5.png
 ├── output.png
+├── README.MD
 ├── tp8-sebelum.png
-├── tp8-sesudah.png
-└── README.md
+└── tp8-sesudah.png
 ```
 
 ## Analisis Bagian D TP8 (Google Docs)
+Nama : Natanael Lata Saro Agassi Zebua
+Nim : 253303621260  
+
 https://docs.google.com/document/d/1P2E1Vt90Tm4gVKWp6zVS8HTPDeWaj57T_hBUxTMtxhY/edit?usp=drive_link
