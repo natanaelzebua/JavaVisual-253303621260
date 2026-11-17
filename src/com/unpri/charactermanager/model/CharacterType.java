@@ -4,6 +4,5 @@ public enum CharacterType {
     WARRIOR,
     MAGE,
     ARCHER,
-    TANK,
     HEALER
 }

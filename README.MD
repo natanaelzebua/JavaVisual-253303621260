@@ -49,9 +49,9 @@ CharacterManager/
 │   │               ├── AppTheme.java
 │   │               └── MainWindow.java
 │   └── Main.java
-├── README.md
-├── output.png
 ├── output-tp5.png
+├── output.png
+├── README.MD
 ├── tp8-sebelum.png
 ├── tp8-sesudah.png
 ├── tp10-sebelum-v03.png
@@ -59,4 +59,8 @@ CharacterManager/
 ```
 
 ## Analisis Bagian D TP10 (Google Docs)
+Nama : Natanael Lata Saro Agassi Zebua  
+
+Nim : 253303621260  
+
 https://docs.google.com/document/d/1wVJl3kcKGHupsJlixrLa1JHxdBZru00AXeQmMtUCTH8/edit?usp=drive_link
