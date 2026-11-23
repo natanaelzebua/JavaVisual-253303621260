@@ -19,9 +19,9 @@ public class Main {
         manager.addCharacter(new Character("Gatotkaca", CharacterType.WARRIOR, 7));
         manager.addCharacter(new Character("Morgana",   CharacterType.MAGE,    1));
         manager.addCharacter(new Character("Artemis",   CharacterType.ARCHER,  6));
-
+        
         SwingUtilities.invokeLater(() -> {
-            MainWindow window = new MainWindow(manager.getAllCharacters());
+            MainWindow window = new MainWindow(manager);
             window.setVisible(true);
         });
     }

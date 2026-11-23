@@ -14,9 +14,23 @@ public class Character {
 
     // Constructor 1: karakter BARU (statistik dihitung otomatis, id dari counter)
     public Character(String name, CharacterType type, int level) {
+        
         this.name = name;
         this.type = type;
         this.level = level;
+        if (name == null || name.isBlank()) {                       // aturan 1: nama wajib
+        throw new IllegalArgumentException("Nama tidak boleh kosong");
+    }
+    if (type == null) {                                         // aturan 2: role wajib
+        throw new IllegalArgumentException("Role wajib dipilih");
+    }
+    if (level < 1 || level > 99) {                              // aturan 3: rentang level
+        throw new IllegalArgumentException("Level harus 1-99");
+    }
+    // ... baris inisialisasi field yang SUDAH ADA (this.name = name; dst.) tetap di bawah ini
+    if (type == CharacterType.MAGE && level > 60) {
+    throw new IllegalArgumentException("Level MAGE maksimal 60");
+    }
         this.hitPoints = calculateBaseHP();
         this.attackPower = calculateBaseAttack();
         totalCharacterCreated++;

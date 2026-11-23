@@ -19,6 +19,9 @@ public class CharacterManager {
      * @return true jika berhasil ditambahkan, false jika ditolak karena duplikat
      */
     public boolean addCharacter(Character character) {
+        if (getTotalCharacters() >= 15) {
+        throw new IllegalArgumentException("Daftar penuh (maksimal 15 karakter)");
+        }
         if (findByName(character.getName()) != null) {
             System.out.println("❌ Gagal: karakter dengan nama '" + character.getName() + "' sudah ada!");
             return false;
@@ -121,4 +124,12 @@ public class CharacterManager {
         }
         return sb.toString().trim();
     }
+    public boolean isNameTaken(String name) {
+    for (Character c : getAllCharacters()) {            // memakai method yang sudah ada
+        if (c.getName().equalsIgnoreCase(name)) {       // "arjuna" dianggap sama dengan "Arjuna"
+            return true;
+        }
+    }
+    return false;
+}
 }
